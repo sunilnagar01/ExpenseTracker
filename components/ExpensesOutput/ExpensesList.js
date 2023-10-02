@@ -9,10 +9,14 @@ function renderExpenseItem(itemData) {
     )
 }
 
+function ListFooter() {
+    return <View style={{height: 100}}></View>
+}
+
 export default function ExpensesList({ expenses }) {
     return (
         <View>
-            <FlatList data={expenses} renderItem={renderExpenseItem} keyExtractor={(item) => item.id} />
+            <FlatList data={expenses} renderItem={renderExpenseItem} keyExtractor={(item) => item.id} ListFooterComponent={ListFooter} />
         </View>
     )
 }

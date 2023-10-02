@@ -16,7 +16,7 @@ export default function ExpenseItem({ id, description, date, amount }) {
     }
 
     return (
-        <Pressable onPress={onPress} style={({ pressed }) => pressed && styles.pressed}>
+        <Pressable onPress={onPress} android_ripple={{ color: '#e0e0e0' }}>
             <View style={styles.expenseItem}>
                 <View>
                     <Text style={[styles.textBase, styles.description]}>{description.length > 20 ? description.slice(0, 15) + "..." : description}</Text>
@@ -31,9 +31,6 @@ export default function ExpenseItem({ id, description, date, amount }) {
 }
 
 const styles = StyleSheet.create({
-    pressed: {
-        backgroundColor: '#e0e0e0'
-    },
     expenseItem: {
         paddingVertical: 16,
         paddingHorizontal: 20,
