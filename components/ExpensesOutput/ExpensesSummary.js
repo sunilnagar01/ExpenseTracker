@@ -18,7 +18,7 @@ export default function ExpensesSummary({ expenses, periodTime }) {
 
 const styles = StyleSheet.create({
     container: {
-        paddingVertical: 8,
+        paddingVertical: 10,
         paddingHorizontal: 16,
         backgroundColor: GlobalStyles.colors.primary50,
         borderRadius: 6,

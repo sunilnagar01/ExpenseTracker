@@ -19,7 +19,7 @@ export default function ExpenseItem({ id, description, date, amount }) {
         <Pressable onPress={onPress} style={({ pressed }) => pressed && styles.pressed}>
             <View style={styles.expenseItem}>
                 <View>
-                    <Text style={[styles.textBase, styles.description]}>{description}</Text>
+                    <Text style={[styles.textBase, styles.description]}>{description.length > 20 ? description.slice(0, 15) + "..." : description}</Text>
                     <Text style={styles.textBase}>{getFormattedDate(date)}</Text>
                 </View>
                 <View style={styles.amountContainer}>
