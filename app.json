@@ -1,15 +1,15 @@
 {
   "expo": {
     "name": "ExpenseTrackerApp",
-    "slug": "ExpenseTrackerApp",
+    "slug": "expense-tracker",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#004aad"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -21,10 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.sknagar08.expensetracker"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "afaf8641-06e6-443c-b476-26289062e005"
+      }
+    },
+    "owner": "sknagar08"
   }
 }
